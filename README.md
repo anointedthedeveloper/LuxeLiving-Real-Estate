@@ -10,7 +10,7 @@ A premium, multi-page real estate website with dynamic property, agent, and blog
 
 ## 🚀 Live Demo
 
-**🌐 View Website:** [LuxeLiving Real Estate on GitHub Pages](https://anointedthedeveloper.github.io/luxeliving-real-estate/)
+**🌐 View Website:** [LuxeLiving Real Estate on GitHub Pages]( https://anointedthedeveloper.github.io/LuxeLiving-Real-Estate/)
 
 
 ## ✨ Features
