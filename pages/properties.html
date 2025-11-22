@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Properties | LuxeLiving Real Estate</title>
+    <meta name="description" content="Browse our exclusive collection of premium properties. Find your dream home with LuxeLiving.">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-3">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <i class="fas fa-building me-2"></i>LuxeLiving
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="properties.html">Properties</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="agents.html">Agents</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center">
+                    <button class="btn btn-outline-light me-2 login-btn">Login</button>
+                    <button class="btn btn-emerald login-btn">Register</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-3 fw-bold mb-4">Find Your Perfect Property</h1>
+                    <p class="lead mb-0">Discover our curated collection of premium properties across prime locations</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Properties Section -->
+    <section class="py-6 bg-cream">
+        <div class="container">
+            <div class="row">
+                <!-- Filters Sidebar -->
+                <div class="col-lg-3 mb-5">
+                    <div class="bg-white rounded-3 shadow-sm p-4 sticky-top" style="top: 100px;">
+                        <h5 class="fw-bold text-charcoal mb-4">Filter Properties</h5>
+                        
+                        <!-- Price Range -->
+                        <div class="mb-4">
+                            <label class="form-label fw-semibold">Price Range</label>
+                            <select class="form-select">
+                                <option selected>Any Price</option>
+                                <option>$100,000 - $300,000</option>
+                                <option>$300,000 - $500,000</option>
+                                <option>$500,000 - $1,000,000</option>
+                                <option>$1,000,000+</option>
+                            </select>
+                        </div>
+                        
+                        <!-- Property Type -->
+                        <div class="mb-4">
+                            <label class="form-label fw-semibold">Property Type</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="apartment">
+                                <label class="form-check-label" for="apartment">Apartment</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="house">
+                                <label class="form-check-label" for="house">House</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="villa">
+                                <label class="form-check-label" for="villa">Villa</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="commercial">
+                                <label class="form-check-label" for="commercial">Commercial</label>
+                            </div>
+                        </div>
+                        
+                        <!-- Bedrooms -->
+                        <div class="mb-4">
+                            <label class="form-label fw-semibold">Bedrooms</label>
+                            <select class="form-select">
+                                <option selected>Any</option>
+                                <option>1+</option>
+                                <option>2+</option>
+                                <option>3+</option>
+                                <option>4+</option>
+                                <option>5+</option>
+                            </select>
+                        </div>
+                        
+                        <!-- Bathrooms -->
+                        <div class="mb-4">
+                            <label class="form-label fw-semibold">Bathrooms</label>
+                            <select class="form-select">
+                                <option selected>Any</option>
+                                <option>1+</option>
+                                <option>2+</option>
+                                <option>3+</option>
+                                <option>4+</option>
+                            </select>
+                        </div>
+                        
+                        <!-- Location -->
+                        <div class="mb-4">
+                            <label class="form-label fw-semibold">Location</label>
+                            <input type="text" class="form-control" placeholder="Enter location">
+                        </div>
+                        
+                        <!-- Reset & Apply -->
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-emerald">Apply Filters</button>
+                            <button class="btn btn-outline-primary">Reset Filters</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Properties Grid -->
+                <div class="col-lg-9">
+                    <!-- Sort & Results -->
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <div>
+                            <h5 class="fw-bold text-charcoal mb-0">Showing 12 Properties</h5>
+                            <p class="text-gray mb-0">In New York, NY</p>
+                        </div>
+                        <div class="d-flex align-items-center gap-3">
+                            <span class="text-gray">Sort by:</span>
+                            <select class="form-select" style="width: auto;">
+                                <option selected>Newest First</option>
+                                <option>Price: Low to High</option>
+                                <option>Price: High to Low</option>
+                                <option>Most Popular</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <!-- Properties Grid -->
+                    <div class="row g-4" id="propertyGrid">
+                        <!-- Property 1 -->
+                        <div class="col-xl-4 col-lg-6">
+                            <div class="property-card card h-100">
+                                <div class="position-relative overflow-hidden">
+                                    <img src="https://images.unsplash.com/photo-1613977257363-707ba9348227?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" 
+                                         class="card-img-top property-image" alt="Modern Apartment">
+                                    <div class="position-absolute top-0 end-0 m-3">
+                                        <span class="badge badge-primary">Featured</span>
+                                    </div>
+                                    <div class="position-absolute bottom-0 start-0 m-3">
+                                        <span class="badge badge-emerald">$450,000</span>
+                                    </div>
+                                </div>
+                                <div class="card-body p-4">
+                                    <h5 class="card-title fw-bold text-charcoal mb-2">Modern Downtown Apartment</h5>
+                                    <p class="card-text text-gray mb-3">
+                                        <i class="fas fa-map-marker-alt text-emerald me-2"></i>
+                                        Downtown, New York
+                                    </p>
+                                    <div class="property-features d-flex justify-content-between text-gray mb-4">
+                                        <span><i class="fas fa-bed text-emerald me-1"></i> 3 Beds</span>
+                                        <span><i class="fas fa-bath text-emerald me-1"></i> 2 Baths</span>
+                                        <span><i class="fas fa-ruler-combined text-emerald me-1"></i> 1,200 sqft</span>
+                                    </div>
+                                    <p class="card-text text-gray mb-4">Beautiful modern apartment in the heart of downtown with stunning city views and premium amenities.</p>
+                                    <a href="property-single.html?id=1" class="btn btn-outline-primary w-100">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Property 2 -->
+                        <div class="col-xl-4 col-lg-6">
+                            <div class="property-card card h-100">
+                                <div class="position-relative overflow-hidden">
+                                    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" 
+                                         class="card-img-top property-image" alt="Luxury Villa">
+                                    <div class="position-absolute top-0 end-0 m-3">
+                                        <span class="badge badge-emerald">Luxury</span>
+                                    </div>
+                                    <div class="position-absolute bottom-0 start-0 m-3">
+                                        <span class="badge badge-emerald">$1,200,000</span>
+                                    </div>
+                                </div>
+                                <div class="card-body p-4">
+                                    <h5 class="card-title fw-bold text-charcoal mb-2">Luxury Beachfront Villa</h5>
+                                    <p class="card-text text-gray mb-3">
+                                        <i class="fas fa-map-marker-alt text-emerald me-2"></i>
+                                        Malibu, California
+                                    </p>
+                                    <div class="property-features d-flex justify-content-between text-gray mb-4">
+                                        <span><i class="fas fa-bed text-emerald me-1"></i> 5 Beds</span>
+                                        <span><i class="fas fa-bath text-emerald me-1"></i> 4 Baths</span>
+                                        <span><i class="fas fa-ruler-combined text-emerald me-1"></i> 3,500 sqft</span>
+                                    </div>
+                                    <p class="card-text text-gray mb-4">Stunning beachfront villa with private pool, panoramic ocean views, and luxury finishes throughout.</p>
+                                    <a href="property-single.html?id=2" class="btn btn-outline-primary w-100">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Property 3 -->
+                        <div class="col-xl-4 col-lg-6">
+                            <div class="property-card card h-100">
+                                <div class="position-relative overflow-hidden">
+                                    <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" 
+                                         class="card-img-top property-image" alt="Family House">
+                                    <div class="position-absolute top-0 end-0 m-3">
+                                        <span class="badge badge-accent">Family</span>
+                                    </div>
+                                    <div class="position-absolute bottom-0 start-0 m-3">
+                                        <span class="badge badge-emerald">$750,000</span>
+                                    </div>
+                                </div>
+                                <div class="card-body p-4">
+                                    <h5 class="card-title fw-bold text-charcoal mb-2">Spacious Family Home</h5>
+                                    <p class="card-text text-gray mb-3">
+                                        <i class="fas fa-map-marker-alt text-emerald me-2"></i>
+                                        Suburban, Chicago
+                                    </p>
+                                    <div class="property-features d-flex justify-content-between text-gray mb-4">
+                                        <span><i class="fas fa-bed text-emerald me-1"></i> 4 Beds</span>
+                                        <span><i class="fas fa-bath text-emerald me-1"></i> 3 Baths</span>
+                                        <span><i class="fas fa-ruler-combined text-emerald me-1"></i> 2,800 sqft</span>
+                                    </div>
+                                    <p class="card-text text-gray mb-4">Perfect family home in a quiet neighborhood with excellent schools, parks, and community amenities.</p>
+                                    <a href="property-single.html?id=3" class="btn btn-outline-primary w-100">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Pagination -->
+                    <nav aria-label="Properties pagination" class="mt-5">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" tabindex="-1">Previous</a>
+                            </li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">Next</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-6 bg-emerald text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h3 class="fw-bold mb-3">Can't Find What You're Looking For?</h3>
+                    <p class="lead mb-0">Let our expert agents help you find your perfect property. We have access to exclusive listings not available publicly.</p>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <a href="contact.html" class="btn btn-light btn-lg px-5">Contact Agent</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h5 class="text-white mb-4">
+                        <i class="fas fa-building me-2"></i>LuxeLiving
+                    </h5>
+                    <p class="text-light mb-4">Your trusted partner in finding premium real estate properties. We're committed to making your property dreams a reality.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2">
+                    <h6 class="text-white mb-4">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="../index.html">Home</a></li>
+                        <li class="mb-2"><a href="about.html">About Us</a></li>
+                        <li class="mb-2"><a href="properties.html">Properties</a></li>
+                        <li class="mb-2"><a href="agents.html">Agents</a></li>
+                        <li class="mb-2"><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3">
+                    <h6 class="text-white mb-4">Contact Info</h6>
+                    <ul class="list-unstyled text-light">
+                        <li class="mb-2">
+                            <i class="fas fa-map-marker-alt me-2"></i>
+                            123 Luxury Avenue, New York, NY
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-phone me-2"></i>
+                            +1 (555) 123-4567
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-envelope me-2"></i>
+                            info@luxeliving.com
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3">
+                    <h6 class="text-white mb-4">Business Hours</h6>
+                    <ul class="list-unstyled text-light">
+                        <li class="mb-2">Monday - Friday: 9am - 6pm</li>
+                        <li class="mb-2">Saturday: 10am - 4pm</li>
+                        <li class="mb-2">Sunday: Closed</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <hr class="my-4 bg-charcoal-light">
+            
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="text-light mb-0">&copy; 2023 LuxeLiving Real Estate. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="text-light mb-0">Made by Agunloye Anointed – anointedthedeveloper</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals and Scripts -->
+    <div class="modal fade" id="loginModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Login to Your Account</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">Email Address</label>
+                            <input type="email" class="form-control" placeholder="Enter your email">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Password</label>
+                            <input type="password" class="form-control" placeholder="Enter your password">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="rememberMe">
+                            <label class="form-check-label" for="rememberMe">Remember me</label>
+                        </div>
+                        <button type="submit" class="btn btn-emerald w-100">Login</button>
+                    </form>
+                    <div class="text-center mt-3">
+                        <a href="#" id="switchToRegister">Don't have an account? Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="registerModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Create New Account</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">First Name</label>
+                                <input type="text" class="form-control" placeholder="First name">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Last Name</label>
+                                <input type="text" class="form-control" placeholder="Last name">
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Email Address</label>
+                            <input type="email" class="form-control" placeholder="Enter your email">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Password</label>
+                            <input type="password" class="form-control" placeholder="Create password">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" placeholder="Confirm password">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="agreeTerms">
+                            <label class="form-check-label" for="agreeTerms">I agree to the Terms & Conditions</label>
+                        </div>
+                        <button type="submit" class="btn btn-emerald w-100">Create Account</button>
+                    </form>
+                    <div class="text-center mt-3">
+                        <a href="#" id="switchToLogin">Already have an account? Login</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>
